@@ -1,0 +1,147 @@
+:root {
+  --azul-noite: #12183a;;
+  --azul-medio: #1f2b6b;
+  --vermelho: #d0211c;;
+  --amarelo: #ffe401;;
+  --branco: #f5f5f5;
+  --cinza-escuro: #1b1b1f;
+  --cinza-medio: #3a3a42;
+  --preto: #000;
+ --fonte-texto: 'Barlow', Arial, sans-serif;
+}
+
+.press-start-2p {
+  font-family: "Press Start 2P", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.black-ops-one-regular {
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.bebas-neue-regular {
+  font-family: "Bebas Neue", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: var(--fonte-texto);
+  margin: 0;
+}
+
+.cabecalho {
+  background-color: var(--vermelho);
+  color: var(--amarelo);
+  font-family: var(--fonte-titulo);
+   font-size: 1.2rem;
+}
+
+.w-8rem {
+  width: 8rem;
+}
+
+.menu {
+  background-color: var(--azul-noite);
+  border-bottom: 0.2rem solid var(--amarelo);
+}
+
+.menu .nav-link {
+  font-size: 1rem;
+  
+}
+.menu .nav-link:hover,
+.menu .nav-link:focus {
+  background-color: var(--vermelho);
+}
+
+.moldura {
+    width: 300px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.moldura-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.secao { padding: 4rem 0;}
+figcaption { font-size: .85rem; opacity: .75; margin-top: .4rem; }
+
+.selecao .visually-hidden {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+}
+
+.sf-geral {
+background-color: var(--azul-medio);
+color: var(--branco);
+}
+
+.carousel-item img {
+  height: 335px;
+  width: 200px;
+}
+
+.bandeira{
+  height: 25px;
+  width: 40px;
+}
+
+
+.painel {
+  display: none;
+  background: var(--azul-noite);
+  border: 7px solid var(--amarelo);
+  padding: 1rem;
+}
+.painel h4 { font-family: var(--fonte-titulo); font-size: 1rem; color: var(--amarelo); margin: .9rem 0 .5rem; }
+
+#l-ryu:checked ~ .row .p-ryu,
+#l-honda:checked ~ .row .p-honda,
+#l-blanka:checked ~ .row .p-blanka,
+#l-guile:checked ~ .row .p-guile,
+#l-ken:checked ~ .row .p-ken,
+#l-chun-li:checked ~ .row .p-chun-li,
+#l-zangief:checked ~ .row .p-zangief,
+#l-dhalsim:checked ~ .row .p-dhalsim { display: block; }
+
+.lutador {
+  display: block;
+  width: 10rem;
+  aspect-ratio: 1;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--azul-noite);
+  border: 4px solid var(--preto);
+}
+.lutador img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.lutador:hover,
+#l-ryu:checked ~ .row label[for="l-ryu"],
+#l-honda:checked ~ .row label[for="l-honda"],
+#l-blanka:checked ~ .row label[for="l-blanka"],
+#l-guile:checked ~ .row label[for="l-guile"],
+#l-ken:checked ~ .row label[for="l-ken"],
+#l-chun-li:checked ~ .row label[for="l-chun-li"],
+#l-zangief:checked ~ .row label[for="l-zangief"],
+#l-dhalsim:checked ~ .row label[for="l-dhalsim"] {
+  border-color: var(--vermelho);
+  box-shadow: 0 0 0 4px var(--amarelo);
+}
+#l-ryu:focus-visible ~ .row label[for="l-ryu"],
+#l-honda:focus-visible ~ .row label[for="l-honda"],
+#l-blanka:focus-visible ~ .row label[for="l-blanka"],
+#l-guile:focus-visible ~ .row label[for="l-guile"],
+#l-ken:focus-visible ~ .row label[for="l-ken"],
+#l-chun-li:focus-visible ~ .row label[for="l-chun-li"],
+#l-zangief:focus-visible ~ .row label[for="l-zangief"],
+#l-dhalsim:focus-visible ~ .row label[for="l-dhalsim"] {
+  outline: 3px solid var(--branco);
+  outline-offset: 4px;
+}
+
